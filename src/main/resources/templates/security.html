@@ -9,25 +9,18 @@
 	src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <link rel="stylesheet" type="text/css" href="/css/layout.css" />
 <meta charset="ISO-8859-1">
-<title>Password Reset</title>
+<title>Security Question</title>
 </head>
 <body>
 	<div class="backgroundfull" data-role="page" id="page-1">
-		<form class="reset" name="Password Reset" id="form-1"
-			action="/">
-			<h1>Password Reset</h1>
+		<form class="signup" name="security" id="form-4" action="reset">
+			<h1>Security Question</h1>
 			<hr>
-
-			<div class="ui-field-contain">
-				 <input name="password-1"
-					id="password-1" data-clear-btn="true" data-mini="true" value=""
-					placeholder="New Password" maxlength="15" required="true"
-					data-theme="a" type="password" /> 
-				<input name="cnewpassword" id="cnewpassword" data-clear-btn="true"
-					data-mini="true" value="" placeholder="Confirm New Password"
-					maxlength="15" required="true" data-theme="a" type="password" />
-			</div>
-
+			<label id="label-1" for="sec" form="security">Question</label><br>
+			<br>
+			<input name="sec" id="sec" data-clear-btn="true" data-mini="true"
+				value="" placeholder="Answer" maxlength="100" required="true"
+				data-theme="a" type="text" />
 			<div class="ui-input-btn ui-btn ui-mini ui-corner-all ui-btn-b">
 				Submit <input data-enhanced="true" type="submit" value="Submit"
 					id="submit" />

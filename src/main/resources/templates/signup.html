@@ -12,8 +12,8 @@
 <title>Sign Up</title>
 </head>
 <body>
-	<div class="backgroundfull" data-role="page" id="page-1">
-		<form class="signup" name="Signup Page" id="form-1" action="loginpage">
+	<div class="background" data-role="page" id="page-1">
+		<form class="signup" name="Signup Page" id="form-1" action="/">
 			<h1>Sign Up Page</h1>
 			<hr>
 			<div class="ui-field-contain">
@@ -47,6 +47,17 @@
 			<input type="checkbox" name="checkbox-1" id="term" class="custom"
 				data-mini="true" data-iconpos="left" data-theme="a" /> <label
 				for="term">I agree</label>
+				<select name="sec" id="sec" data-mini="true" data-iconpos="left" data-theme="a">
+				<option value="null" selected="selected">Select a security question...</option>
+					<option value="pet">What is your favourite pet?</option>
+					<option value="place">Where were you born?</option>
+					<option value="nick">What is your first nickname?</option>
+					<option value="bff">Who was your childhood best friend?</option>
+					<option value="country">Which is your favourite country?</option>
+				</select>
+				
+					<input name="answer" id="answer" data-clear-btn="true" data-mini="true" value="" placeholder="Answer" maxlength="10" required="true" type="text"/>
+	
 			<div class="ui-input-btn ui-btn ui-mini ui-corner-all ui-btn-b">
 				Submit <input data-enhanced="true" type="submit" value="Submit"
 					id="submit" />

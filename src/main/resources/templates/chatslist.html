@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-2.0.1.min.js"></script>
+<script
+	src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/layout.css" />
 <meta charset="ISO-8859-1">
 <title>Chats</title>
 </head>
 <body>
-<div class="backgroundfull" data-role="page" id="page-2">
-	<div data-role="header" class="header">
+	<div class="backgroundfull" data-role="page" id="page-2">
+		<div data-role="header" class="header">
 			<div class="ui-body-b ui-body">
 				<div data-role="navbar" id="navbar-1" data-iconpos="top">
 					<h1>EgerChat</h1>
 					<ul>
 						<li><a href="/home" data-icon="home">Home</a></li>
-						<li><a class="ui-btn-active" href="/chatslist" data-icon="mail">Chats (0)</a></li>
+						<li><a class="ui-btn-active" href="/chatslist"
+							data-icon="mail">Chats (4)</a></li>
 						<li><a href="/profile" data-icon="user">Profile</a></li>
 						<li><a href="/aboutus" data-icon="info">About Us</a></li>
 						<li><a href="/" data-icon="lock">Log Out</a></li>
@@ -20,12 +28,36 @@
 				</div>
 			</div>
 		</div>
+		<div data-role="content" id="center" style="height: auto;">
+	
+			<h1>My Chats</h1>
+			<form class="ui-filterable">
+				<input data-type="search" id="searchForListview-1" />
+			</form>
+			<ul class="chats" data-role="listview" id="chats" data-filter="true"
+				data-input="#searchForListview-1" data-inset="true" data-theme="b"
+				data-divider-theme="a">
+				<li><a href="#">chat1</a></li>
+				<li><a href="item2.html">Item 2</a></li>
+				<li><a href="item3.html">Item 3</a></li>
+				<li><a href="item4.html">Item 4</a></li>
+				<li><a href="#">chat1</a></li>
+				<li><a href="item2.html">Item 2</a></li>
+				<li><a href="item3.html">Item 3</a></li>
+				<li><a href="item4.html">Item 4</a></li>
+				<li><a href="#">chat1</a></li>
+				<li><a href="item2.html">Item 2</a></li>
+				<li><a href="item3.html">Item 3</a></li>
+				<li><a href="item4.html">Item 4</a></li>
+			</ul>
+
+		</div>
 		<div class="footer">
-		<p>
-			Designed by Pheene<sup><small>TM</small></sup>
-		</p>
+			<p>
+				Designed by Pheene<sup><small>TM</small></sup>
+			</p>
+		</div>
+
 	</div>
-		
-</div>
 </body>
 </html>

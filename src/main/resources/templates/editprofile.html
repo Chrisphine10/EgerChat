@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-2.0.1.min.js"></script>
+<script
+	src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/layout.css" />
+<meta charset="ISO-8859-1">
+<title>Edit Profile</title>
+</head>
+<body>
+	<div class="backgroundfull" data-role="page" id="page-3">
+		<div data-role="header" class="header">
+			<div class="ui-body-b ui-body">
+				<div data-role="navbar" id="navbar-1" data-iconpos="top">
+					<h1>EgerChat</h1>
+					<ul>
+						<li><a href="/home" data-icon="home">Home</a></li>
+						<li><a href="/chatslist" data-icon="mail">Chats (0)</a></li>
+						<li><a class="ui-btn-active" href="/profile" data-icon="user">Profile</a></li>
+						<li><a href="/aboutus" data-icon="info">About Us</a></li>
+						<li><a href="/" data-icon="lock">Log Out</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div data-role="content" id="center">
+			<form class="signup" name="editprofile" id="form-1"
+				action="profile">
+				<h1>Edit Profile</h1>
+				<hr>
+				<div class="ui-field-contain">
+					<input value="name" name="username" id="username"
+						data-clear-btn="true" data-mini="true"
+						placeholder="User Name" maxlength="20" autofocus="true"
+						required="true" data-theme="a" type="text" />
+						<input value="age"
+						style="width: 100%;" name="age" id="age" data-clear-btn="true" placeholder="Age" min="18" max="100" step="1"
+						required="true" data-theme="a" type="number" />
+					<fieldset data-role="controlgroup" id="gender"
+						data-type="horizontal">
+						<legend>Gender</legend>
+						<input name="radio-choice-1" id="radio-choice-1a" data-mini="true"
+							data-theme="a" value="male" type="radio" /> <label
+							for="radio-choice-1a">Male</label> <input name="radio-choice-1"
+							id="radio-choice-1b" data-mini="true" data-theme="a"
+							value="female" type="radio" /> <label for="radio-choice-1b">Female</label>
+					</fieldset>
+				</div>
+
+				<div class="ui-input-btn ui-btn ui-mini ui-corner-all ui-btn-b">
+					Submit <input data-enhanced="true" type="submit" value="Submit"
+						id="submit" />
+				</div>
+
+			</form>
+			<div>
+						<a href="reset">Change Password</a>
+					</div>
+		</div>
+		<div class="footer">
+			<p>
+				Designed by Pheene<sup><small>TM</small></sup>
+			</p>
+		</div>
+
+	</div>
+
+</body>
+</html>

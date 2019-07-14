@@ -58,4 +58,20 @@ public class AppController {
 	public String viewPassReset() {
 		return "passreset";
 	}
+	@RequestMapping(value = "terms")
+	public String viewTerms() {
+		return "terms";
+	}
+	@RequestMapping(value = "editprofile")
+	public String viewEditProfile() {
+		return "editprofile";
+	}
+	@RequestMapping(value = "sq")
+	public String viewSecurity() {
+		return "security";
+	}
+	@RequestMapping(value = "un")
+	public String viewUserName() {
+		return "un";
+	}
 }

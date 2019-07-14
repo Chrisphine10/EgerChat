@@ -1,34 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-2.0.1.min.js"></script>
+<script
+	src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/layout.css" />
 <meta charset="ISO-8859-1">
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <title>Profile</title>
 </head>
 <body>
-<!--Navigation bar-->
-<div class="backgroundfull" data-role="page" id="page-3">
-	<div data-role="header" class="header">
+	<div class="backgroundfull" data-role="page" id="page-3">
+		<div data-role="header" class="header">
 			<div class="ui-body-b ui-body">
 				<div data-role="navbar" id="navbar-1" data-iconpos="top">
 					<h1>EgerChat</h1>
 					<ul>
 						<li><a href="/home" data-icon="home">Home</a></li>
 						<li><a href="/chatslist" data-icon="mail">Chats (0)</a></li>
-						<li><a class="ui-btn-active" href="/profile" data-icon="user">Profile</a></li>
+						<li><a class="ui-btn-active" href="profile" data-icon="user">Profile</a></li>
 						<li><a href="/aboutus" data-icon="info">About Us</a></li>
 						<li><a href="/" data-icon="lock">Log Out</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
+		<div data-role="content" id="center">
+			<div>
+				<img style="width: 300px; height: 300px;" alt="usericon" src="/img/icon.png" />
+			</div>
+			<div>
+				<p>
+					User Name: <a>username</a>
+				</p>
+
+				<p>
+					Age: <a>age</a>
+				</p>
+
+				<p>
+					Gender: <a>gender</a>
+				</p>
+				
+					<a href="editprofile">Edit Profile</a>
+				
+
+			</div>
+		</div>
 		<div class="footer">
-		<p>
-			Designed by Pheene<sup><small>TM</small></sup>
-		</p>
+			<p>
+				Designed by Pheene<sup><small>TM</small></sup>
+			</p>
+		</div>
+
 	</div>
-		
-</div>
 
 </body>
 </html>
