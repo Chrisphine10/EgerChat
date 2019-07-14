@@ -1,0 +1,54 @@
+body {
+	text-align: center;
+	border-width: medium;
+	border-style: none;
+	font-family: "Times New Roman", Times, sans-serif;
+}
+
+h1.title {
+	background-color: gray;
+}
+
+form {
+	width: 300px;
+	display: inline-block;
+	margin-top: 100px;
+	font-family: "Times New Roman", Times, sans-serif;
+}
+#center{
+ align-content: center;
+}
+form.signup {
+	width: 400px;
+	display: inline-block;
+	margin-top: 100px;
+}
+
+div.backgroundfull {
+	background-image: url("./../img/shingle-423014_1920.jpg");
+	background-repeat: repeat;
+	height: 100%;
+}
+
+div.background {
+	
+}
+
+hr.short-hr {
+	width: 300px;
+	display: inline-block;
+}
+
+button.create-acc {
+	width: 300px;
+	display: inline-block;
+}
+
+div.footer {
+	background-color: #c0c0c0;
+	text-align: center;
+	position: absolute;
+	  bottom: 0;
+	  width: 100%;
+	  height: 50px;
+}

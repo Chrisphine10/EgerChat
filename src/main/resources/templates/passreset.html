@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-2.0.1.min.js"></script>
+<script
+	src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/layout.css" />
+<meta charset="ISO-8859-1">
+<title>Password Reset</title>
+</head>
+<body>
+	<div class="backgroundfull" data-role="page" id="page-1">
+		<form class="reset" name="Password Reset" id="form-1"
+			action="loginpage">
+			<h1>Password Reset</h1>
+			<hr>
+
+			<div class="ui-field-contain">
+				 <input name="password-1"
+					id="password-1" data-clear-btn="true" data-mini="true" value=""
+					placeholder="New Password" maxlength="15" required="true"
+					data-theme="a" type="password" /> 
+				<input name="cnewpassword" id="cnewpassword" data-clear-btn="true"
+					data-mini="true" value="" placeholder="Confirm New Password"
+					maxlength="15" required="true" data-theme="a" type="password" />
+			</div>
+
+			<div class="ui-input-btn ui-btn ui-mini ui-corner-all ui-btn-b">
+				Submit <input data-enhanced="true" type="submit" value="Submit"
+					id="submit" />
+			</div>
+
+		</form>
+
+		<div class="footer">
+			<p>
+				Designed by Pheene<sup><small>TM</small></sup>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

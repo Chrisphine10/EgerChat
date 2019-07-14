@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-2.0.1.min.js"></script>
+<script
+	src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/layout.css" />
+<meta charset="ISO-8859-1">
+<title>Sign Up</title>
+</head>
+<body>
+	<div class="backgroundfull" data-role="page" id="page-1">
+		<form class="signup" name="Signup Page" id="form-1" action="loginpage">
+			<h1>Sign Up Page</h1>
+			<hr>
+			<div class="ui-field-contain">
+				<input name="username" id="username" data-clear-btn="true"
+					data-mini="true" value="" placeholder="User Name" maxlength="20"
+					autofocus="true" required="true" data-theme="a" type="text" />
+					<input style="width: 100%;"
+					name="age" id="age" data-clear-btn="true" value=""
+					placeholder="Age" min="18" max="100" step="1" required="true"
+					data-theme="a" type="number" />
+				<fieldset data-role="controlgroup" id="gender"
+					data-type="horizontal">
+					<legend>Gender</legend>
+					<input name="radio-choice-1" id="radio-choice-1a" data-mini="true"
+						data-theme="a" value="male" type="radio" /> <label
+						for="radio-choice-1a">Male</label> <input name="radio-choice-1"
+						id="radio-choice-1b" data-mini="true" data-theme="a"
+						value="female" type="radio" /> <label for="radio-choice-1b">Female</label>
+				</fieldset>
+				<input name="password" id="password" data-clear-btn="true"
+					data-mini="true" value="" placeholder="Password" maxlength="20"
+					required="true" data-theme="a" type="password" /> <input
+					name="cpassword" id="cpassword" data-clear-btn="true"
+					data-mini="true" value="" placeholder="Repeat Password"
+					maxlength="20" required="true" data-theme="a" type="password" />
+			</div>
+			<p>
+				Read <a href="terms">Terms and Conditions</a> for using this web
+				site.
+			</p>
+			<input type="checkbox" name="checkbox-1" id="term" class="custom"
+				data-mini="true" data-iconpos="left" data-theme="a" /> <label
+				for="term">I agree</label>
+			<div class="ui-input-btn ui-btn ui-mini ui-corner-all ui-btn-b">
+				Submit <input data-enhanced="true" type="submit" value="Submit"
+					id="submit" />
+			</div>
+
+		</form>
+		<div>
+			<p>
+				Have an account. Click <strong><a href="/">here</a></strong>
+			</p>
+		</div>
+		<div class="footer">
+			<p>
+				Designed by Pheene<sup><small>TM</small></sup>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
