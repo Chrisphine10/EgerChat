@@ -74,4 +74,5 @@ public class AppController {
 	public String viewUserName() {
 		return "un";
 	}
+	
 }
